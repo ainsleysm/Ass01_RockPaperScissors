@@ -6,7 +6,6 @@ public class Main {
 
         String moveA = "";
         String moveB = "";
-        String trash = "";
         String againYN = "";
         boolean done = false;
         boolean playerA = false;
@@ -30,6 +29,7 @@ public class Main {
                     playerA = true;
                 } else {
                     System.out.println("You must enter a valid move not " + moveA);
+                    playerA = false;
                 }
             }while(!playerA);
 
@@ -75,6 +75,7 @@ public class Main {
                     }
                 } else {
                     System.out.println("You must enter a valid move not " + moveB);
+                    playerB = false;
                 }
             }while(!playerB);
 
